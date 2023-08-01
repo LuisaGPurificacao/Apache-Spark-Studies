@@ -1,3 +1,22 @@
-23/08/01 14:28:03 INFO Hello Spark: Starting HelloSpark
-23/08/01 14:28:03 INFO Hello Spark: Creating dataframe
-23/08/01 14:28:08 INFO Hello Spark: Finished HelloSpark
+23/08/01 16:26:12 INFO Hello Spark: Starting HelloSpark
+23/08/01 16:26:12 INFO Hello Spark: Creating dataframe
+23/08/01 16:26:21 INFO Hello Spark: Dataframe created
+23/08/01 16:26:30 INFO Hello Spark: app.author=Luisa
+spark.app.id=local-1690917971107
+spark.app.name=Hello Spark
+spark.app.startTime=1690917968247
+spark.app.submitTime=1690917967924
+spark.driver.extraJavaOptions=-Djava.net.preferIPv6Addresses=false -XX:+IgnoreUnrecognizedVMOptions --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.cs=ALL-UNNAMED --add-opens=java.base/sun.security.action=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED -Djdk.reflect.useDirectMethodHandle=false -Dlog4j.configuration=file:log4j.properties -Dspark.yarn.app.container.log.dir=app-logs -Dlogfile.name=hello-spark
+spark.driver.host=IBM-PF3QM3CW
+spark.driver.port=53714
+spark.executor.extraJavaOptions=-Djava.net.preferIPv6Addresses=false -XX:+IgnoreUnrecognizedVMOptions --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.cs=ALL-UNNAMED --add-opens=java.base/sun.security.action=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=java.security.jgss/sun.security.krb5=ALL-UNNAMED -Djdk.reflect.useDirectMethodHandle=false
+spark.executor.id=driver
+spark.master=local[3]
+spark.rdd.compress=True
+spark.serializer.objectStreamReset=100
+spark.sql.warehouse.dir=file:/C:/Users/020461631/Desktop/Projetos/Apache-Spark-Studies/HelloSpark/spark-warehouse
+spark.submit.deployMode=client
+spark.submit.pyFiles=
+spark.ui.showConsoleProgress=true
+spark.yarn.app.container.log.dir=app-logs
+23/08/01 16:26:30 INFO Hello Spark: Finished HelloSpark

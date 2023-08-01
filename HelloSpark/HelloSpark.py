@@ -1,11 +1,12 @@
 from pyspark.sql import *
 
 from lib.logger import Log4J
+from lib.utils import get_spark_app_config
 
 if __name__ == "__main__":
+    conf = get_spark_app_config()
     spark = SparkSession.builder \
-        .appName("Hello Spark") \
-        .master("local[3]") \
+        .config(conf=conf) \
         .getOrCreate()
 
     logger = Log4J(spark)
@@ -23,6 +24,9 @@ if __name__ == "__main__":
     logger.info("Dataframe created")
 
     df.show()
+
+    conf_out = spark.sparkContext.getConf()
+    logger.info(conf_out.toDebugString())
 
     logger.info("Finished HelloSpark")
 
