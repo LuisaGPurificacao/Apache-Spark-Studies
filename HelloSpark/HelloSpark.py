@@ -3,7 +3,7 @@ import sys
 from pyspark.sql import *
 
 from lib.logger import Log4J
-from lib.utils import get_spark_app_config
+from lib.utils import get_spark_app_config, count_by_country
 from lib.utils import load_survey_df
 
 if __name__ == "__main__":
@@ -22,8 +22,13 @@ if __name__ == "__main__":
 
     survey_df = load_survey_df(spark, sys.argv[1])
 
-    survey_df.show()
+    partitioned_survey_df = survey_df.repartition(2)
 
+    count_df = count_by_country(partitioned_survey_df)
+
+    logger.info(count_df.collect())
+
+    input("Press Enter")
     logger.info("Finished HelloSpark")
 
     # spark.stop()
