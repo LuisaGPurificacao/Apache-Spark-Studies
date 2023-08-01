@@ -12,3 +12,10 @@ def get_spark_app_config():
         spark_conf.set(key, val)
 
     return spark_conf
+
+
+def load_survey_df(spark, data_file):
+    return spark.read \
+        .option("header", "true") \
+        .option("inferSchema", "true") \
+        .csv(data_file)
